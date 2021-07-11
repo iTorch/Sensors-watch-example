@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="40sp"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ly1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/xAvalue"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/yAvalue"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/zAvalue"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ly1"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/xGvalue"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/yGvalue"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/zGvalue"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ly2"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/xMvalue"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/yMvalue"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/zMvalue"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ly3"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/light"
+                android:layout_width="45sp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/pressure"
+                android:layout_width="45sp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="45sp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ly4"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hearth_rate"
+                android:layout_width="75sp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_width="75sp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
