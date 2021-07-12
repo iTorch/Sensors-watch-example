@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-
 public class MainActivity extends Activity implements SensorEventListener{
 
     private TextView xAvalue, yAvalue, zAvalue, xGvalue, yGvalue, zGvalue, xMvalue,
@@ -45,6 +44,7 @@ public class MainActivity extends Activity implements SensorEventListener{
 
         hearth_rate=(TextView)findViewById(R.id.hearth_rate);
 
+        //Iniciaizar sensores
         Log.d(TAG, "onCreate: Initializing Sensor Services");
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
@@ -60,7 +60,7 @@ public class MainActivity extends Activity implements SensorEventListener{
         mHearth_rate = sensorManager.getDefaultSensor(Sensor.TYPE_HEART_RATE);
         if (mHearth_rate != null)
         {
-                sensorManager.registerListener(MainActivity.this, mHearth_rate, SensorManager.SENSOR_DELAY_FASTEST);
+            sensorManager.registerListener(MainActivity.this, mHearth_rate, SensorManager.SENSOR_DELAY_FASTEST);
             Log.d(TAG, "onCreate: Registered Hearth Rate listener");
         }else{
             hearth_rate.setText("HR not support");
@@ -129,12 +129,14 @@ public class MainActivity extends Activity implements SensorEventListener{
         }else{
             light.setText("Temp not supported");
         }
+        //Iniciaizar sensores
     }
 
     @Override
     public void onSensorChanged(SensorEvent event) {
         Sensor sensor = event.sensor;
 
+        //Obtener valores de los sensores
         if (sensor.getType() == Sensor.TYPE_ACCELEROMETER){
             xAvalue.setText("X: " + event.values[0]);
             yAvalue.setText("Y: " + event.values[1]);
@@ -158,6 +160,7 @@ public class MainActivity extends Activity implements SensorEventListener{
         }else if (sensor.getType() == Sensor.TYPE_AMBIENT_TEMPERATURE){
             temp.setText("Temp: " + event.values[0]);
         }
+        //Obtener valores de los sensores
     }
 
     @Override

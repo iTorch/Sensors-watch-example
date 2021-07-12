@@ -24,19 +24,19 @@
                 android:id="@+id/xAvalue"
                 android:layout_width="50sp"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"/>
+                android:textSize="12sp"/>
 
             <TextView
                 android:id="@+id/yAvalue"
                 android:layout_width="50sp"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"/>
+                android:textSize="12sp"/>
 
             <TextView
                 android:id="@+id/zAvalue"
                 android:layout_width="50sp"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"/>
+                android:textSize="12sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -51,19 +51,19 @@
                 android:id="@+id/xGvalue"
                 android:layout_width="50sp"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"/>
+                android:textSize="12sp"/>
 
             <TextView
                 android:id="@+id/yGvalue"
                 android:layout_width="50sp"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"/>
+                android:textSize="12sp"/>
 
             <TextView
                 android:id="@+id/zGvalue"
                 android:layout_width="50sp"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"/>
+                android:textSize="12sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -78,19 +78,19 @@
                 android:id="@+id/xMvalue"
                 android:layout_width="50sp"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"/>
+                android:textSize="12sp"/>
 
             <TextView
                 android:id="@+id/yMvalue"
                 android:layout_width="50sp"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"/>
+                android:textSize="12sp"/>
 
             <TextView
                 android:id="@+id/zMvalue"
                 android:layout_width="50sp"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"/>
+                android:textSize="12sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -103,21 +103,21 @@
 
             <TextView
                 android:id="@+id/light"
-                android:layout_width="45sp"
+                android:layout_width="50sp"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"/>
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/pressure"
-                android:layout_width="45sp"
+                android:layout_width="50sp"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"/>
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/temp"
-                android:layout_width="45sp"
+                android:layout_width="50sp"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"/>
+                android:textSize="12sp" />
 
         </LinearLayout>
 
@@ -133,13 +133,13 @@
                 android:id="@+id/hearth_rate"
                 android:layout_width="75sp"
                 android:layout_height="wrap_content"
-                android:textSize="10sp" />
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/humidity"
                 android:layout_width="75sp"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"/>
+                android:textSize="12sp"/>
 
         </LinearLayout>
     </RelativeLayout>
